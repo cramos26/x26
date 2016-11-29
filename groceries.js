@@ -41,13 +41,12 @@ function removeParentListItem() {
   console.log(myList);
 }
 
-function savelist(){
+function saveList(){
 Listinstring = myList.toString();
-
-function setCookie("cookieforsavelist", cookieforsavelist , 1);
+setCookie("cookieforsavelist", Listinstring , 1);
 }
 
-clearlist() {
+clearList() {
 document.getElementById("listDisplay").innerHTML = "";
 myList = [];
 }
