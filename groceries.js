@@ -46,7 +46,7 @@ Listinstring = myList.toString();
 setCookie("cookieforsavelist", Listinstring , 1);
 }
 
-clearList() {
+function clearList() {
 document.getElementById("listDisplay").innerHTML = "";
 myList = [];
 }
