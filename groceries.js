@@ -1,6 +1,6 @@
 
 var myList = [];
-var Listinstring = [];
+var Listinstring = "";
 
 function addItem(){
   var input = document.getElementById("newItem").value;
@@ -41,13 +41,14 @@ function removeParentListItem() {
   console.log(myList);
 }
 
-savelist(){
+function savelist(){
 Listinstring = myList.toString();
-setCookie("", , 1)
+
+function setCookie("cookieforsavelist", cookieforsavelist , 1);
 }
 
 clearlist() {
-document.getElementById("listDisplay").value
+document.getElementById("listDisplay").innerHTML = "";
 myList = [];
 }
 
